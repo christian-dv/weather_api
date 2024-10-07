@@ -19,9 +19,9 @@ API desarrollada con spring boot utilizando la fuente externa OpenWeather.
 
    ```bash
    git clone https://github.com/christian-dv/weather_api.git
-   cd tu-repositorio
+   cd tu-ubicacion/proyecto
    
-2. **Una vez el proyecto haya sido descargado debemos irnos a la carpeta raiz
+2. **Una vez el proyecto haya sido descargado debemos irnos a la carpeta del mismo
      y ejecutar el CMD en esa ubicacion**
 
 3. **Luego ejecutar el siguiente comando:**
