@@ -21,16 +21,17 @@ API desarrollada con spring boot utilizando la fuente externa OpenWeather.
    git clone https://github.com/christian-dv/weather_api.git
    cd tu-ubicacion/proyecto
    
-2. **Una vez el proyecto haya sido descargado debemos irnos a la carpeta del mismo
-     y ejecutar el CMD en esa ubicacion**
+2. **Abrir el proyecto con algun IDE y ejecutar el comando mvn clean install para generar el .jar
+     de la app)**
 
-3. **Luego ejecutar el siguiente comando:**
+3. **Luego ejecutar el siguiente comando en la ubicacion del proyecto:**
     ```bash
    docker-compose up -d
 
-4. **Con ese comando se descargará y posteriormente iniciará el contenedor
+4. **Con ese comando se descargarán las imagenes y posteriormente iniciará el contenedor
      (APP puerto 8080, MYSQL puerto 3606 y REDIS puerto 6379)**
-5. **Por ultimo, podemos ir a Postman y primero iniciar sesion o crear usuarios:**
+5. **Antes de probar los endpoints debemos insertar ROL_ADMIN y ROL_USER en la tabla Rol**
+6. **Por ultimo, podemos ir a Postman y primero iniciar sesion o crear usuarios:**
     ```bash
    (POST) http://localhost:8080/auth/login (iniciar sesion)
    Requiere BODY : 
@@ -42,7 +43,7 @@ API desarrollada con spring boot utilizando la fuente externa OpenWeather.
     "nombre":"ejemplo",
     "nombreUsuario":"ejemplo",
     "password":"ejemplo"}
-6. **Generará un token que debemos usar para ejecutar los endpoints (en Postman ir a Authenticated y
+7. **Generará un token que debemos usar para ejecutar los endpoints (en Postman ir a Authenticated y
      seleccionar Bearer token y pegarlo) los endpoints son:**
     ```bash
    (GET)(Clima actual por ciudad) 
